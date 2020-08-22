@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gg.dao.IUserDao">
+    <resultMap id="associatedWihAccount" type="user">
+        <id property="id" column="id"></id>
+        <result property="username" column="username"></result>
+        <result property="address" column="address"></result>
+        <result property="sex" column="sex"></result>
+        <result property="birthday" column="birthday"></result>
+        <collection property="accountList" ofType="account" select="com.gg.dao.IAccountDao.findAccountById" column="id"></collection>
+    </resultMap>
+
+    <!--    查询所有user-->
+    <select id="findAll" resultType="user">
+        select id,username,address,sex,birthday from user;
+    </select>
+    <!--    根据userid查询一个user-->
+    <select id="selectOneUserById" parameterType="java.lang.Integer" resultType="user">
+        select id,userName,address,sex,birthday from user where id=#{uid};<!-- 这里的id可以任意-->
+    </select>
+    <!--    联表account查询 多对多-->
+    <select id="findAllAssociatedWithAccount" resultMap="associatedWihAccount">
+      select u.id,userName,address,sex,birthday,a.ID as aid,a.MONEY,a.uid from user u LEFT OUTER JOIN account a on a.uid =u.id
+    </select>
+</mapper>
