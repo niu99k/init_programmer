@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f53e6cb6-bddb-46d4-8f93-e70f55aafefb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gg/dao/TestDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gg/dao/iml/TestDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gg/sevice/TestService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gg/sevice/impl/TestServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestAnnotationIoc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestAnnotationIoc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/gg/AnnotationIoc.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gg/AnnotationIoc.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TestAnnotationIoc.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestAnnotationIoc.class" afterDir="false" />
-    </list>
+    <list default="true" id="f53e6cb6-bddb-46d4-8f93-e70f55aafefb" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -66,11 +56,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/gg/sevice/impl/TestServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="2" column="33" lean-forward="true" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+            <state relative-caret-position="190">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -84,11 +77,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestAnnotationIoc.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+            <state relative-caret-position="135">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -146,7 +139,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-11" />
     <option name="y" value="-11" />
     <option name="width" value="1943" />
@@ -310,7 +303,7 @@
       <option name="presentableId" value="Default" />
       <updated>1598835075250</updated>
       <workItem from="1598835078315" duration="3105000" />
-      <workItem from="1598839929376" duration="327000" />
+      <workItem from="1598839929376" duration="992000" />
     </task>
     <servers />
   </component>
@@ -321,12 +314,15 @@
     <history-entry file="TestAnnotationIoc_testResources - 2020.08.31 at 10h 15m 27s.xml">
       <configuration name="TestAnnotationIoc.testResources" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestAnnotationIoc_testResources - 2020.08.31 at 10h 17m 53s.xml">
+      <configuration name="TestAnnotationIoc.testResources" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3432000" />
+    <option name="totallyTimeSpent" value="4097000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27199355" />
@@ -339,7 +335,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.44268078" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.51499116" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -393,13 +389,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gg/sevice/TestService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gg/dao/iml/TestDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -412,17 +401,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gg/sevice/impl/TestServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestAnnotationIoc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="2" column="33" lean-forward="true" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+        <state relative-caret-position="135">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestAnnotationIoc.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gg/sevice/TestService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+        <state relative-caret-position="38">
+          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gg/sevice/impl/TestServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
