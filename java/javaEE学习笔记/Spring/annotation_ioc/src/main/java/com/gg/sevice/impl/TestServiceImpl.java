@@ -14,6 +14,19 @@ import javax.annotation.Resource;
 //@Scope(value = "prototype")
 public class TestServiceImpl implements TestService {
     @Resource(name = "testDao")
-    public TestDao testDao;
+    private TestDao testDao;
 
+    @PostConstruct
+    public void init() {
+        System.out.println("begin");
+    }
+
+    @PreDestroy
+    public void end() {
+        System.out.println("end");
+    }
+
+    public void testService() {
+        testDao.testSuc();
+    }
 }

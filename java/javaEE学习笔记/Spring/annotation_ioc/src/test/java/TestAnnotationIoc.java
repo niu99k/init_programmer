@@ -16,8 +16,8 @@ public class TestAnnotationIoc {
     @Test
     public void testResources() {
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("bean.xml");
-        TestServiceImpl testService = (TestServiceImpl) applicationContext.getBean("testService");
-        testService.testDao.testSuc();
+        TestService testService = (TestService) applicationContext.getBean("testService");
+        testService.testService();
     }
 
     @Test
@@ -29,5 +29,13 @@ public class TestAnnotationIoc {
         TestService testService1 = (TestServiceImpl) applicationContext.getBean("testService");
         TestService testService2 = (TestServiceImpl) applicationContext.getBean("testService");
         System.out.println(testService1 == testService2);
+    }
+
+    @Test
+    public void testLifeCycle() {
+        ClassPathXmlApplicationContext classPathXmlApplicationContext = new ClassPathXmlApplicationContext("bean.xml");
+        TestService testService = (TestService) classPathXmlApplicationContext.getBean("testService");
+        testService.testService();
+        classPathXmlApplicationContext.close();
     }
 }
