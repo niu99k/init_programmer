@@ -5,11 +5,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.gg</groupId>
-  <artifactId>file_upload</artifactId>
+  <artifactId>img_server</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>war</packaging>
 
-  <name>ajax Maven Webapp</name>
+  <name>img_server Maven Webapp</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -103,7 +103,7 @@
   </dependencies>
 
   <build>
-    <finalName>ajax</finalName>
+    <finalName>img_server</finalName>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
         <plugin>
