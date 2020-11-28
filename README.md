@@ -1,1 +1,1 @@
-# init a programmer
+# void initProgrammer();
