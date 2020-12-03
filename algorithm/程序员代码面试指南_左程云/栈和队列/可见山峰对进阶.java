@@ -78,9 +78,8 @@ public class Main {
     private static void cleanStack() {
         while (!mpStack.isEmpty()) {
             if (mpStack.size() > 2) {
-                while (mpStack.size() > 2) {
-                    result += (2 + pairCount(mpStack.pop()));
-                }
+                Record record = mpStack.pop();
+                result += (2 * record.count + pairCount(record));
             } else if (mpStack.size() == 2) {
                 Record record = mpStack.pop();
                 result += (pairCount(record));
@@ -105,7 +104,8 @@ public class Main {
         } else {
             while (!mpStack.isEmpty()) {
                 if (mpStack.peek().height < mountainHeight) {
-                    result += 2 + pairCount(mpStack.pop());
+                    Record record = mpStack.pop();
+                    result += 2 * record.count + pairCount(record);
                 } else {
                     break;
                 }
