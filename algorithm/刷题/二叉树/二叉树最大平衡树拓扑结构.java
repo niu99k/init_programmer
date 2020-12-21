@@ -36,50 +36,10 @@ ps:节点的编号就是节点的值。
 15 0 0
 
 4 2
-2 0 3
-3 -1 5
--1 0 0
+2 3 4
+3 0 5
 5 0 0
-
-9 2
-2 1 4
-1 -1 3
-4 5 0
--1 -2 0
-3 0 0
-5 -3 6
--2 0 0
--3 0 0
-6 0 0
-
-6 2
-2 6 0
-6 0 7
-7 0 3
-3 -1 8
-
-8 2
-2 0 6
-6 -2 7
--2 0 9
-9 0 0
-7 0 3
-3 -1 8
--1 0 0
-8 0 0
-
-11 100
-100 30 0
-30 0 40
-40 0 50
-50 90 60
-90 11 91
-60 0 0
-11 9 51
-91 0 92
-9 0 0
-51 0 0
-92 0 0
+4 0 0
 输出
 复制
 3
@@ -152,13 +112,25 @@ public class Main {
             allLeftContribution = 0;
         } else {
             TreeNode left = treeMap.get(treeMap.get(rootId).left);
-            allLeftContribution = left.id < rootId ? left.leftContribution + left.rightContribution + 1 : 0;
+            if (left.id < rootId) {
+                allLeftContribution = left.leftContribution + left.rightContribution + 1;
+            } else {
+                allLeftContribution = 0;
+                left.leftContribution = 0;
+                left.rightContribution = 0;
+            }
         }
         if (treeMap.get(rootId).right == 0) {
             allRightContribution = 0;
         } else {
             TreeNode right = treeMap.get(treeMap.get(rootId).right);
-            allRightContribution = right.id > rootId ? right.leftContribution + right.rightContribution + 1 : 0;
+            if (right.id > rootId) {
+                allRightContribution = right.leftContribution + right.rightContribution + 1;
+            } else {
+                allRightContribution = 0;
+                right.leftContribution = 0;
+                right.rightContribution = 0;
+            }
 
         }
         result.maxCount = allLeftContribution + allRightContribution + 1;
